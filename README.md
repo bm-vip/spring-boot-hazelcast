@@ -1,4 +1,5 @@
-# Read Me First
+# Spring boot Hazelcast
+## Installation
 * To check the Hazelcast cache solution working properly, we should run two instance of project with the following sections:
 * Before running the application, the following commands must be executed in the terminal from the project root directory:
   1. build project and run main instance of project:
@@ -6,12 +7,12 @@
     mvn clean install
     mvn spring-boot:run
     ```
-  1. open new command line, then run the second instance of project:
+  2. open new command line, then run the second instance of project:
     ```
     mvn spring-boot:run -Dspring-boot.run.jvmArguments="-Dserver.port=2023"
     ```
 
-# Getting Started
+## Getting Started
 * we can have a share cache storage space between instances because of hazelcast mechanism, but each instance of the project has its own H2 embedded database!
 * To make sure about this story we should just invoke following APIs:
 
