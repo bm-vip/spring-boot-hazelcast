@@ -1,0 +1,7 @@
+hazelcast:
+  integrity-checker:
+    enabled: true
+  network:
+    join:
+      multicast:
+        enabled: true
